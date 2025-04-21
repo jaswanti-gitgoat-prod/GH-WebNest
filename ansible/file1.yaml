@@ -1,0 +1,5 @@
+- name: Bad Example - Missing 'creates' or 'removes'
+  hosts: all
+  tasks:
+    - name: Run a shell command without creates/removes
+      shell: echo "This is risky!"
