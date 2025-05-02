@@ -1,0 +1,17 @@
+timeout: 15m
+format: table
+exit-code: 1
+severity:
+  - HIGH
+  - CRITICAL
+scan:
+  scanners:
+    - vuln
+    - secret
+vulnerability:
+  type:
+    - os
+    - library
+  ignore-unfixed: true
+db:
+  repository: public.ecr.aws/aquasecurity/trivy-db:2
